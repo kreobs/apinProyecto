@@ -24,27 +24,47 @@
 				<div id="navigation">
 					<ul>
 						<li>
-							<a href="index.html">Home</a>
+							<a href="index.html">Inicio</a>
 						</li>
+					
+                                                <li class="dropdown">
+                                                  <a href="about.html" class="dropbtn">Nosotros</a>
+                                                    <div class="dropdown-content">
+                                                        
+                                                        <a href="#">Historia</a>
+                                                        <a href="#">Nos Reconocen</a>
+                                                        <a href="#">Estructura</a>
+                                                        <a href="#">Consejo</a>
+                                                    </div>
+                                                </li>
+                                                
+                                                <li class="dropdown">
+                                                  <a href="about.html" class="dropbtn">Noticias</a>
+                                                    <div class="dropdown-content">
+                                                        <a href="videos.html">Videos</a>
+                                                        <a href="images.html">Imagenes</a>
+                                                        
+                                                    </div>
+                                                </li>
 						<li>
-							<a href="about.html">About</a>
-						</li>
-						<li>
-							<a href="rooms.html">Rooms</a>
+							<a href="rooms.html">Transparencia</a>
 						</li>
 						
 						<li>
-							<a href="foods.html">Food</a>
+							<a href="contact.html">Contacto</a>
 						</li>
-						<li class="selected">
-							<a href="registration.jsp">Join Us</a>
+                                                
+                                                <li>
+							<a href="registration.jsp">Unetenos</a>
 						</li>
-						<li>
-							<a href="contact.html">Contact</a>
+                                                
+                                                <li>
+							<a href="login.jsp">Login</a>
 						</li>
+						
+						
 					</ul>
 				</div>
-			</div>
 			<div id="contents">
 				<div class="box">
 					<div>
@@ -56,17 +76,17 @@
 								
 						</div>
           <pre>
-        <form action="register" method="post">
+        <form action="login.jsp" method="post">
             
         <label class="main">Name : </label>              <input type="text" placeholder="name" name="name">
                  
-        <label class="main">Mobile : </label>            <input type="text" placeholder="mobile" name="mob">
+        <label class="main">Mobile : </label>            <input type="text" placeholder="mobile" name="mobile">
             
-        <label class="main">Address: </label>            <input type="text" placeholder="address" name="add">
+        <label class="main">Address: </label>            <input type="text" placeholder="address" name="address">
 
-        <label class="main">Eamil: </label>              <input type="text" placeholder="email" name="email">
+        <label class="main">Email: </label>              <input type="text" placeholder="email" name="email">
            
-        <label class="main">Password: </label>           <input type="password" placeholder="password" name="pass">
+        <label class="main">Password: </label>           <input type="password" placeholder="password" name="password">
 
                         
                  <input type="submit" value="Register"style="background: #30122b;
@@ -85,6 +105,8 @@
   text-decoration: none;"/>
 
        </form>
+
+       
 
         </pre>                                          
                                                     
