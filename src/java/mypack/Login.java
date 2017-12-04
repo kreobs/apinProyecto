@@ -48,7 +48,10 @@ public class Login extends HttpServlet {
                 HttpSession session=request.getSession();  
                 session.setAttribute("email", user.getEmail());  
                 session.setAttribute("fullName", user.getName());
-                session.setAttribute("isAdmin", new Boolean (user.getIsAdmin()));
+                if (!user.getIsAdmin()) {
+                } else {
+                    session.setAttribute("isAdmin", user.getIsAdmin());
+                }
                 request.getRequestDispatcher("index.jsp").include(request, response);
             }else{
                 request.getRequestDispatcher("login.jsp").include(request, response);  
