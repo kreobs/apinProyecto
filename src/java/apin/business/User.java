@@ -1,14 +1,13 @@
 package apin.business;
 
-import java.io.Serializable;
-
-public class User implements Serializable {
+public class User {
 
     private String name;
     private String mobile;
     private String address;
     private String email;
     private String password;
+    private Boolean isAdmin;
 
     public User() {
         name = "";
@@ -18,12 +17,16 @@ public class User implements Serializable {
         password = "";
     }
 
-    public User(String name, String mobile, String address,String email,String password) {
+    public User(String name, String mobile, String address, String email, String password) {
         this.name = name;
         this.mobile = mobile;
         this.address = address;
         this.email = email;
         this.password = password;
+    }
+
+    public User(String email, String password, String fullName, String telephone) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getName() {
@@ -64,5 +67,21 @@ public class User implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+    
+    public Boolean getIsAdmin() {
+        return isAdmin;
+    }
+
+    public void setIsAdmin(Boolean isAdmin) {
+        this.isAdmin = isAdmin;
+    }
+    
+    public Boolean hasPassword(String password) {
+        if (this.password.trim().equals(password)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

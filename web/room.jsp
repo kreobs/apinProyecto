@@ -24,7 +24,7 @@
 				<div id="navigation">
 					<ul>
 						<li>
-							<a href="index.html">Home</a>
+							<a href="index.jsp">Home</a>
 						</li>
 						<li>
 							<a href="about.html">About</a>

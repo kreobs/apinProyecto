@@ -19,7 +19,7 @@
     <body>
         <div id="header">
 				<div id="logo">
-					<a href="index.html"><img src="images/logo.png" alt="LOGO" height="112" width="118"></a>
+					<a href="index.jsp"><img src="images/logo.png" alt="LOGO" height="112" width="118"></a>
 				</div>
 				<div id="navigation">
 					<ul>
